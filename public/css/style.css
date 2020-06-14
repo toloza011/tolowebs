@@ -1,0 +1,381 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+ 
+ .bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+.navbar-brand{
+  height: 50px;
+  font-size: 45px;
+  margin: 0;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: 100px ;
+}
+.carousel-item{
+  height:600px;
+  width: 100%;  
+}
+.carousel-item .second{
+  right: 0;
+  left: auto;
+  margin-bottom: 200px;
+  margin-right: 180px;
+  font-size: 18px;
+
+}
+.carousel-item .third{
+  right: 0;
+  left: auto;
+  margin-bottom: 200px;
+  margin-right: 200px;
+  font-size: 20px;
+}
+.carousel-item .firth{
+  right: 0;
+  left: auto;
+  margin-bottom: 200px;
+  margin-right: 240px;
+  font-size: 25px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size:  100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+}
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+
+.social-link{
+  text-decoration: none;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 3;
+}
+
+.social-p{
+  color: white;
+  position: relative;
+  left: -10px;
+  font-family: 'Lato';
+  font-size: 15px;
+}
+
+#sidebar {
+  height: 250px;
+  width: 10px;
+  position: fixed;
+  text-align: center;
+  padding: 10px;
+  margin-left: 10px;
+  z-index: 100;
+  margin-top: 120px;
+}
+
+p i {
+  left: 30px;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 24px;
+  
+}
+
+.social {
+  margin-left: -200px;
+  width: 230px;
+  padding: 0;
+  display: inline-table;
+  height: 0px;
+  background-color: rgba(128, 128, 128, 0.73);
+  -moz-transition-property: margin-left;
+  -moz-transition-duration: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -ms-transition-property: margin-left;
+  -ms-transition-duration: 0.2s;
+  -ms-transition-delay: 0.2s;
+  -o-transition-property: margin-left;
+  -o-transition-duration: 0.2s;
+  -o-transition-delay: 0.2s;
+  -webkit-transition-property: margin-left;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s;
+  box-shadow: 0px 0px 6px 0px #3E3D3D;
+  cursor: pointer;
+}
+
+.social:hover {
+  margin-left: -30px;
+  width: 230px;
+  background-color: #3b5998;
+}
+
+.facebook:hover {
+  background-color: #3b5998;
+}
+
+.twitter:hover {
+  background-color: #4099FF;
+}
+
+.google:hover {
+  background-color: #DD4B39;
+}
+
+.linkedin p i {
+  left: 20px;
+}
+
+.google p i {
+  left: 35px;
+}
+
+.youtube p i {
+  left: 18px;
+}
+
+.youtube:hover {
+  background-color: #E52D27;
+}
+
+.linkedin:hover {
+  background-color: #0976B4;
+}
+.sections li{
+  font-size:20px;
+}
+.sections li .btn{
+  margin-top: 4px;
+}
+.navi{
+  margin-bottom:40px;
+  padding-bottom: 40px;
+  position: relative;
+  top: -10px;
+}
+#razones{
+  margin-top: 80px;
+}
+.cont-razones{
+  position: center;
+  text-align: center;
+  border-radius: 30rem;
+  margin-top: 30px;
+  padding: 70px;
+}
+.cont-razones2{
+  position: center;
+  text-align: center;
+  margin-left: 350px;
+  
+}
+
+.icon-razon{
+   text-align: center;
+   height: 30px;
+   font-size: 70px;
+   margin-bottom: 50px;
+}
+.material-icons{
+  font-size:80px;
+}
+.title-razon{
+  text-align: center;
+  font-size: 30px;
+}
+.description-razon{
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+#equipo{
+  margin-top: 60px;
+  width: 100%;
+}
+#servicios{
+  margin-bottom: 90px;
+}
+.cont-equipo{
+  height: 100%;
+  width: 100%;
+}
+
+.cont-equipo2{
+  height: 100%;
+  width: 100%;
+}
+.cont-equipo2 .img-equipo  :first{
+  text-align: center;
+  margin-right: 100px;
+}
+.cont-equipo2 .nombre-equipo{
+  margin-right: 250px;
+  font-size: 25px;
+}
+.cont-equipo2 .descripcion-equipo{
+  margin-right: 250px;
+}
+.second .img-equipo  :first{
+  margin-right: 30px;
+}
+.second .nombre-equipo{
+  margin-right: 250px;
+  font-size: 25px;
+}
+.second .descripcion-equipo{
+  margin-right: 250px;
+}
+.img-equipo img{
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  margin-left: 140px;
+  margin-top: 30px;
+}
+.nombre-equipo{
+  text-align: center;
+  margin-left: 50px;
+  font-size: 25px;
+}
+.descripcion-equipo{
+  text-align: center;
+  margin-left: 50px;
+}
+
+
+input {
+	outline: none;
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+.buscador{
+  margin-left: 60px;
+  margin-top: 20px;
+}
+input[type=search] {
+	background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 85px;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+input[type=search]:focus {
+	width: 250px;
+	background-color: #fff;
+	border-color: #66CC75;
+	
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+
+input:-moz-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}
+.ir-arriba {
+	display:none;
+	padding:20px;
+	background:#024959;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+  right:20px;
+}
+.subir{
+  font-size: 30px;
+}
+footer{
+    margin-top:100px; 
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+.bigicon {
+font-size: 35px;
+color: #36A0FF;
+  }
+  .form{
+      margin-top: 130px;
+  }
+
