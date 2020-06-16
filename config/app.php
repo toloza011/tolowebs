@@ -132,6 +132,7 @@ return [
     | this array to grant expanded functionality to your applications.
     |
     */
+    'cipher' => 'AES-128-CBC',
 
     'providers' => [
 
