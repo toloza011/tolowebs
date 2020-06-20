@@ -25,17 +25,18 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!--
         <form class="buscador col-md-push-4">
           <input type="search" placeholder="Buscar..">
         </form>
-        
+      -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ml-auto sections">
-            <li class="nav-item active">
-              <a class="nav-link" href="#carousel">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item active ">
+              <a class="nav-link" href="/#carousel">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a href="/#razones" class="nav-link">Beneficios</a>
+              <a  class="nav-link" href="/#razones">Beneficios</a>
 
             </li>
             <li class="nav-item">
@@ -44,10 +45,37 @@
             <li class="nav-item">
               <a class="nav-link" href="/#servicios">Servicios</a>
             </li>
-          
+            @guest
+            <li class="nav-item ml-2">
+                <a class="btn btn-outline-success " href="{{ route('login') }}">Iniciar Sesion</a>
+            </li>
+            @if (Route::has('register'))
+                <li class="nav-item">
+                    <a class="btn btn-outline-primary ml-2 " href="{{ route('register') }}">Registrate</a>
+                </li>
+            @endif
+           @else
+            <li class="nav-item dropdown">
+                <a id="navbarDropdown" class="btn btn-outline-success dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                    {{ Auth::user()->username }} <span class="caret"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{{ route('logout') }}"
+                       onclick="event.preventDefault();
+                                     document.getElementById('logout-form').submit();">
+                        {{ __('Logout') }}
+                    </a>
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+                </div>
+            </li>
+           @endguest
             <li class="nav-item">
             <a href="{{route('contacto')}}" class="ml-2 btn btn-outline-success">Contacto</a>
             </li>
+            
           </ul>
         </div>
       </nav>

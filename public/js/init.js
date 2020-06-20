@@ -18,7 +18,12 @@ $(document).ready(function(){
     $('.sections').onePageNav({
       scrollSpeed: 750,
       scrollThreshold: 0,
-    
+      begin: function(){
+       console.log("Estas en el inicio");
+      },
+      end: function(){
+         console.log("Estas en el final");
+      },
     });
    
    });

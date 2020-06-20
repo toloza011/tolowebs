@@ -144,6 +144,71 @@
   </section>
   <hr>
   <!--------/Razones---------->
+   <!-----Servicios---->
+   
+   <section id="servicios">
+    <div class="container">
+        <h1 class="text-center" style="margin-top:60px; margin-bottom:30px">
+          Nuestros Servicios
+        </h1>
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header bg-secondary">
+            <h4 class="my-0 font-weight-normal text-white ">Plan Basico</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$49.990 <small class="text-muted">/ Mes</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Pagina Web Simple</li>
+              <li>Hosting y dominio .CL</li>
+              <li>Correo de Administracion</li>
+              <li>Seccion de contacto</li>
+              <li><del>Login y registro de usuarios</del> </li>
+              <li><del>Accesorias 24/7</del> </li>
+            </ul>
+          <a type="submit" href="{{route('plan',$plan[0]->id)}}" class="btn btn-lg btn-block btn-outline-primary">Lo quiero!</a>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header bg-warning">
+            <h4 class="my-0 font-weight-normal ">Plan Pro</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$79.990 <small class="text-muted">/ Mes</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Pagina Web profesional</li>
+              <li>Hosting y dominio .CL</li>
+              <li>Correo de Administracion</li>
+              <li>Seccion de contacto</li>
+              <li>Login y registro de usuarios</li>
+              <li>Accesorias 24/7</li>
+            </ul>
+            <a type="submit" href="{{route('plan',$plan[1]->id)}}" class="btn btn-lg btn-block btn-outline-warning text-dark">Lo quiero!</a>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header bg-danger">
+            <h4 class="my-0 font-weight-normal text-white" >Plan Tienda Online</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$99.990 <small class="text-muted">/ Mes</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Tienda Online completa</li>
+              <li>Hosting y dominio .CL</li>
+              <li>Correo de Administracion</li>
+              <li>Seccion de contacto</li>
+              <li>Login y registro de usuarios</li>
+              <li>Accesorias 24/7</li>
+
+            </ul>
+            <a type="submit" href="{{route('plan',$plan[2]->id)}}" class="btn btn-lg btn-block btn-outline-danger">Lo quiero!</a>
+          </div>
+        </div>
+      </div>
+    </form>
+   </section>
+  <hr>
+ <!--------/Servicios---------->
   <!--------Equipo------------->
    <section id="equipo">
      <div class="container">
@@ -226,66 +291,7 @@
    </section>
    <hr>
   <!--------/Equipo------------->
-   <!-----Servicios---->
-   <section id="servicios">
-    <div class="container">
-        <h1 class="text-center" style="margin-top:60px; margin-bottom:30px">
-          Nuestros Servicios
-        </h1>
-      <div class="card-deck mb-3 text-center">
-        <div class="card mb-4 box-shadow">
-          <div class="card-header bg-secondary">
-            <h4 class="my-0 font-weight-normal text-white ">Plan Basico</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$49.990 <small class="text-muted">/ Mes</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>Pagina Web Simple</li>
-              <li>Hosting y dominio .CL</li>
-              <li>Correo de Administracion</li>
-              <li>Seccion de contacto</li>
-              <li><del>Accesorias 24/7</del> </li>
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Lo quiero!</button>
-          </div>
-        </div>
-        <div class="card mb-4 box-shadow">
-          <div class="card-header bg-warning">
-            <h4 class="my-0 font-weight-normal ">Plan Pro</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$79.990 <small class="text-muted">/ Mes</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>Pagina Web profesional</li>
-              <li>Hosting y dominio .CL</li>
-              <li>Correo de Administracion</li>
-              <li>Seccion de contacto</li>
-              <li>Accesorias 24/7</li>
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-outline-warning text-dark">Lo quiero!</button>
-          </div>
-        </div>
-        <div class="card mb-4 box-shadow">
-          <div class="card-header bg-danger">
-            <h4 class="my-0 font-weight-normal text-white" >Plan Tienda Online</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$99.990 <small class="text-muted">/ Mes</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>Tienda Online completa</li>
-              <li>Hosting y dominio .CL</li>
-              <li>Correo de Administracion</li>
-              <li>Seccion de contacto</li>
-              <li>Accesorias 24/7</li>
-
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-outline-danger">Lo quiero!</button>
-          </div>
-        </div>
-      </div>
-   </section>
-  <hr>
- <!--------/Servicios---------->
+  
 
 
 @endsection

@@ -3,25 +3,23 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Mail;
 use App\Plan;
+use Mail;
 use PDF;
-
-
-class HomeController extends Controller
+class PlanController extends Controller
 {
-     
-    public function Home(){
-        $plan= Plan::all();
-        return view('Home.index',compact('plan'));
+    public function __construct(){
+        $this->middleware('auth');
     }
 
-    public function contacto(){
-        return view('Home.contacto');
+    public function inscripcion($id){
+
+        $plan= Plan::findOrFail($id);
+        return view('Home.Plan',compact('plan'));    
     }
-    public function enviarContacto(Request $request){
-        
-        $subject = "Contacto ToloWebs";
+    public function contratar($plan,Request $request){
+        $servicio= Plan::findOrFail($plan);
+        $subject = "Contratacion Servicio Tolo webs: $servicio->nombre ";
         $for =["estebantoloza1998@gmail.com","contactotolowebs@gmail.com"];
         $nombre= $request->nombre;
         $from=$request->correo;
@@ -35,9 +33,6 @@ class HomeController extends Controller
             $msj->attachData($pdf->output(), "Contacto.pdf");
         
         });
-       
-        return redirect()->back()->with('alerta','Mensaje enviado exitosamente!');
+        return redirect()->back()->with('alerta','Datos enviados Correctamente! Nos pondremos en contacto con usted a la brevedad.');
     }
-
-
 }

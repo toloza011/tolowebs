@@ -8,9 +8,7 @@
               <form action="{{route('correo')}}" method="post">
                   @csrf
                   <div class="card">
-                      <div class="card-header">
-                          <h1 class="text-center">Contactanos</h1>
-                      </div>
+                    <div class="card-header bg-dark"> <h1 class="text-center text-white">Contactanos</h1></div>
                       <div class="card-body">
                         <div class="form-group">
                             @if(session()->get('alerta'))
@@ -36,7 +34,9 @@
                             <textarea type="textarea" name="mensaje" class="form-control" rows=5 placeholder="Ingrese su consulta aqui..."></textarea>
                         </div>
                         <div class="form-group">
-                            <button class="btn btn-success btn-lg col-12 " type="submit">Enviar</button>
+                            <button type="submit" class="btn btn-outline-dark btn-lg col-12">
+                                Enviar
+                             </button>
                         </div>
                         
                       </div>
