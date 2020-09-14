@@ -37,14 +37,14 @@
             </li>
             <li class="nav-item">
               <a  class="nav-link" href="/#razones">Beneficios</a>
-
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/#equipo">Nosotros</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/#servicios">Servicios</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#equipo">Nosotros</a>
+            </li>
+            
             @guest
             <li class="nav-item ml-2">
                 <a class="btn btn-outline-success " href="{{ route('login') }}">Iniciar Sesion</a>
