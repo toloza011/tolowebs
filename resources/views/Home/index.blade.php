@@ -166,7 +166,7 @@
               <li><del>Login y registro de usuarios</del> </li>
               <li><del>Accesorias 24/7</del> </li>
             </ul>
-          <a type="submit" href="{{route('plan',$plan[0]->id)}}" class="btn btn-lg btn-block btn-outline-primary">Lo quiero!</a>
+          <a type="submit" href="{{route('plan',1)}}" class="btn btn-lg btn-block btn-outline-primary">Lo quiero!</a>
           </div>
         </div>
         <div class="card mb-4 box-shadow">
@@ -183,7 +183,7 @@
               <li>Login y registro de usuarios</li>
               <li>Accesorias 24/7</li>
             </ul>
-            <a type="submit" href="{{route('plan',$plan[1]->id)}}" class="btn btn-lg btn-block btn-outline-warning text-dark">Lo quiero!</a>
+            <a type="submit" href="{{route('plan',2)}}" class="btn btn-lg btn-block btn-outline-warning text-dark">Lo quiero!</a>
           </div>
         </div>
         <div class="card mb-4 box-shadow">
@@ -201,7 +201,7 @@
               <li>Accesorias 24/7</li>
 
             </ul>
-            <a type="submit" href="{{route('plan',$plan[2]->id)}}" class="btn btn-lg btn-block btn-outline-danger">Lo quiero!</a>
+            <a type="submit" href="{{route('plan',3)}}" class="btn btn-lg btn-block btn-outline-danger">Lo quiero!</a>
           </div>
         </div>
       </div>

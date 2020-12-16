@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Mail;
 use App\Plan;
 use PDF;
+use Illuminate\Support\Facades\Validator;
 
 
 class HomeController extends Controller
@@ -21,6 +22,21 @@ class HomeController extends Controller
         return view('Home.contacto');
     }
     public function enviarContacto(Request $request){
+        
+        $mensajes = [
+            'nombre.required' => 'El nombre es obligatorio',
+            'numero.required' => 'El numero es obligatorio',
+            'correo.required' => 'El Email es obligatorio',
+            'mensaje.required' => 'El mensaje es obligatorio',
+            'correo.email'=>     'Debes ingresar un email valido'
+        ];
+
+        Validator::make($request->all(), [
+            'nombre' => 'required',
+            'numero' => 'required',
+            'correo' => 'required|email',
+            'mensaje' => 'required'
+        ],$mensajes)->validate();
         
         $subject = "Contacto ToloWebs";
         $for =["estebantoloza1998@gmail.com","contactotolowebs@gmail.com"];

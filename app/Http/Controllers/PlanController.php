@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Plan;
 use Mail;
 use PDF;
+use Illuminate\Support\Facades\Validator;
+
 class PlanController extends Controller
 {
     public function __construct(){
@@ -19,6 +21,21 @@ class PlanController extends Controller
         return view('Home.Plan',compact('plan'));    
     }
     public function contratar($plan,Request $request){
+        $mensajes = [
+            'nombre.required' => 'El nombre es obligatorio',
+            'numero.required' => 'El numero es obligatorio',
+            'correo.required' => 'El Email es obligatorio',
+            'mensaje.required' => 'El mensaje es obligatorio',
+            'correo.email'=>     'Debes ingresar un email valido'
+        ];
+
+        Validator::make($request->all(), [
+            'nombre' => 'required',
+            'numero' => 'required|numeric',
+            'correo' => 'required|email',
+            'mensaje' => 'required'
+        ],$mensajes)->validate();
+
         $servicio= Plan::findOrFail($plan);
         $subject = "Contratacion Servicio Tolo webs: $servicio->nombre ";
         $for ="estebantoloza1998@gmail.com";

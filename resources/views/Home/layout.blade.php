@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-     <link rel="stylesheet" href='css/style.css'>
+     <link rel="stylesheet" href='{{asset('css/style.css')}}'>
      <link rel="icon" href="{{ URL::asset('/icono.png') }}" type="image/x-icon"/>
     <title>ToloWebs</title>
   </head>
@@ -168,13 +167,13 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!"><i class="fa fa-facebook "> Facebook</i></a>
+            <a href="https://www.facebook.com/esteban.toloza.5"><i class="fa fa-facebook "> Facebook</i></a>
           </li>
           <li>
-            <a href="#!"><i class="fa fa-twitter"> Twitter</i></a>
+            <a href="https://twitter.com/tebi_mendez"><i class="fa fa-twitter"> Twitter</i></a>
           </li>
           <li>
-            <a href="#!"><i class="fa fa-youtube "> Youtube</i></a>
+            <a href="https://www.youtube.com/channel/UCxPufoRKP_CRGy0pMlVFCnA"><i class="fa fa-youtube "> Youtube</i></a>
           </li>
          
         </ul>
@@ -190,7 +189,7 @@
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://mdbootstrap.com/"> ToloWebs</a>
+    <a href="http://tolowebs.herokuapp.com/"> ToloWebs</a>
   </div>
   <!-- Copyright -->
 
@@ -205,14 +204,9 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-    src="https://code.jquery.com/jquery-3.5.1.js"
-    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous"></script>    
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-   <script src="js/init.js"></script>
-   <script src="js/One-Page/jquery.nav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+   <script src="{{asset('js/init.js')}}"></script>
+   <script src="{{asset('js/One-Page/jquery.nav.js')}}"></script>
   </body>
 </html>
 <script>

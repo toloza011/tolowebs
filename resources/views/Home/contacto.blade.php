@@ -16,6 +16,15 @@
                               {{ session()->get('alerta') }}  
                             </div>
                              @endif
+                             @if ($errors->any())
+                             <div class="alert alert-danger">
+                                 <ul>
+                                     @foreach ($errors->all() as $error)
+                                         <li>{{ $error }}</li>
+                                     @endforeach
+                                 </ul>
+                             </div>
+                             @endif
                         </div>
                           <div class="form-group">
                               <label for="nombre">Nombre Completo</label>
@@ -27,7 +36,7 @@
                         </div>
                         <div class="form-group">
                             <label for="nombre">Email</label>
-                            <input type="email" name="correo" class="form-control" placeholder="Ingrese su correo electronico...">
+                            <input type="text" name="correo" class="form-control" placeholder="Ingrese su correo electronico...">
                         </div>
                         <div class="form-group">
                             <label for="consulta">Tu Consulta</label>
