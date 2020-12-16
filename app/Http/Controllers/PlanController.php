@@ -15,6 +15,7 @@ class PlanController extends Controller
     public function inscripcion($id){
         
         $plan= Plan::findOrFail($id);
+       
         return view('Home.Plan',compact('plan'));    
     }
     public function contratar($plan,Request $request){

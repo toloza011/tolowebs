@@ -13,6 +13,7 @@ class HomeController extends Controller
      
     public function Home(){
         $plan= Plan::all();
+        $plan->toArray();
         return view('Home.index',compact('plan'));
     }
 
